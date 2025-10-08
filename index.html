@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Django little website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+<link rel="icon" type="image/png" href="./favicon.png" />
+
+
+</head>
+<body>
+  <div id="video-background"></div>
+  <div class="overlay"></div>
+
+  <div id="entry-overlay" aria-hidden="true">
+    <div class="entry-card">
+      <h1 class="entry-title">Enter the Gayboy Saloon</h1>
+      <p class="entry-sub">Click to step inside</p>
+      <div class="entry-actions">
+        <button id="enter-site-btn" class="enter-btn">Enter</button>
+        <div id="entry-counter" class="entry-counter">Clicks: <span class="count">...</span></div>
+      </div>
+    </div>
+  </div>
+  <main class="center-content">
+    <div class="profile-card">
+  <div id="mute-btn" class="mute-btn" role="button" tabindex="0" aria-pressed="false" title="Mute / Unmute" aria-label="Mute / Unmute"></div>
+  <div id="next-btn" class="next-btn" role="button" tabindex="0" title="Next background" aria-label="Next background">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 5v14l10-7z" />
+        <path d="M19 5v14l-4-7z" />
+      </g>
+    </svg>
+  </div>
+      <img src="./Screenshot_20250713_235830_Instagram (1).png" alt="Profile Picture" class="profile-pic" />
+      <h1 class="name">Django</h1>
+      <div class="persistent-counter">Entrances: <span id="persistent-count">...</span></div>
+      <h2 class="title"></h2>
+  <p class="tagline"><q>It is what it is. You play the hand you’re dealt, not the one you wish for.</q> <br><span class="quote-attrib"> Old saying</span></p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/wet_django/" class="social-icon instagram" target="_blank" aria-label="Instagram">
+          <img src="./icons/icons8-instagram-50.png" alt="Instagram" />
+        </a>
+        <a href="https://discord.gg/wzVqrzhGWH" class="social-icon discord" target="_blank" aria-label="Discord">
+          <img src="./icons/icons8-discord-50.png" alt="Discord" />
+        </a>
+        <a href="https://steamcommunity.com/profiles/76561198158684821/" class="social-icon steam" target="_blank" aria-label="Steam">
+          <img src="./icons/icons8-steam-24.png" alt="Steam" />
+        </a>
+        <a href="https://open.spotify.com/user/31fxd6pk5t6tdeybonf6jjj5m4ii" class="social-icon steam" target="_blank" aria-label="Steam">
+          <img src="./icons/icons8-spotify-50.png" alt="Steam" />
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="made">Made with <span class="heart">❤</span> by Django</span>
+      <span class="dedication">I love my wife <strong>Hiba</strong></span>
+    </div>
+  </footer>
+</body>
+</html>
