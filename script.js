@@ -265,39 +265,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const raw = (titleEl.textContent || '').trim();
   const parts = raw.includes('•') ? raw.split('•').map(s => s.trim()).filter(Boolean) : [];
   const defaults = parts.length > 0 ? parts : [  'Web designer',
-  'Front-end tinkerer',
-  'Tech whisperer',
-  'Hardware analyst',
-  'Performance optimizer',
-  'DIY dreamer',
-  'Digital gift maker',
-  'Idea engineer',
-  'Script editor',
-  'Visual aesthetic crafter',
+  // 🎨 Design & Creativity
+  "UI/UX Design Sense",
+  "Visual Aesthetic Crafting",
+  "Creative Problem Solving",
+  "Branding & Identity Design",
+  "Digital Illustration",
+  "Motion & Micro-Interaction Awareness",
 
-  // 💬 Emotional & Interpersonal
-  'Digital romantic',
-  'Emotional architect',
-  'Heart communicator',
-  'Empathy-driven thinker',
-  'Loyal companion',
-  'Reflective listener',
-  'Relationship analyst',
-  'Supportive partner',
-  'Love letter writer',
-  'Emotional storyteller',
+  // 💻 Web Development
+  "Responsive Web Design",
+  "Modern Front-End Development (React / JavaScript)",
+  "Performance Optimization",
+  "Clean, Maintainable Code Writing",
+  "Debugging & Troubleshooting",
+  "User-Focused Interface Building",
 
-  // 🧠 Personality & Mindset
-  'Pixel nomad',
-  'Curious explorer',
-  'Self-aware learner',
-  'Persistent dream chaser',
-  'Creative philosopher',
-  'Cyber heart',
-  'Modern philosopher',
-  'Deep feeler',
-  'Calm observer',
-  'Reality seeker'];
+  // 🎮 Gaming & Tech
+  "Gameplay Strategy & Analysis",
+  "Fast Learning of New Game Systems",
+  "Hardware Knowledge & Setup Optimization",
+  "Streaming & Community Interaction",
+  "Active Listening",
+  "Adaptability in Social Situations",
+  "Creativity Under Pressure",
+  "Friendly and Approachable Personality",                                             
+  "High Focus and Fast Reflexes"];
   // setup initial span
   const span = document.createElement('span');
   span.className = 'skill-text';
@@ -510,3 +503,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
